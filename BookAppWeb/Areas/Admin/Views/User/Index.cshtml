@@ -1,0 +1,31 @@
+﻿@model List<ApplicationUser>
+
+<div class="container">
+	<div class="row pt-4 pb-4">
+		<div class="col-6">
+			<h2 class="text-primary">Users List</h2>
+		</div>
+
+	</div>
+
+	<table id="tblData" class="display" style="width:100%">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Phone</th>
+				<th>Company</th>
+				<th>Role</th>
+				<th></th>
+			</tr>
+		</thead>
+	</table>
+
+</div>
+
+@section Scripts {
+	<script src="~/js/user.js"></script>
+	@{
+		<partial name="_ValidationScriptsPartial" />
+	}
+}

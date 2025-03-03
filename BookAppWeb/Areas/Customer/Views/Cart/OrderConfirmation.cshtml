@@ -1,0 +1,17 @@
+﻿@model int
+
+<div class="container text-center mt-5">
+    <div class="card shadow-lg p-4">
+        <div class="card-body">
+            <h1 class="text-success"><i class="bi bi-check-circle-fill"></i> Order Confirmed!</h1>
+            <p class="lead">Thank you for your purchase. Your order has been successfully placed.</p>
+            <hr>
+            <h5>Order Details</h5>
+            <p><strong>Order ID:</strong> @Model</p>
+            <p><strong>Date:</strong> @DateTime.Now</p>
+            
+            <a asp-area="Customer" asp-controller="Home" asp-action="Index" class="btn btn-primary mt-3">Return to Home</a>
+@*             <a href="/orders" class="btn btn-outline-secondary mt-3">View Orders</a>
+ *@        </div>
+    </div>
+</div>
